@@ -1,0 +1,71 @@
+starters
+
+
+
+"./images/starters/shrimp-soup.png"
+"./images/starters/salmon-with-vegetable-salad.png"
+
+dinner
+
+
+
+
+"./images/dinner/roasted-beef-potatoes-with-dip-and-parsley-leaves.png"
+
+
+"./images/dinner/sushi-roll.png"
+"./images/dinner/thai-fried-rice-with-sauce.png"
+"./images/dinner/thai-styled-noodles.png"
+
+desert
+"./images/desert/a-slice-of-strawberry-cheesecake.png"
+"./images/desert/black-forest-cake.png"
+"./images/desert/ice-cream-milkshake-sundae-banana-split.png"
+"./images/desert/strawberry-ice-cream.png"
+"./images/desert/sundae-chocolate-ice-cream.png"
+
+coffee
+./images/coffee/cappucino.png"
+./images/coffee/espresso.png"
+./images/coffee/latte.png"
+
+wine
+./images/wine/absolut-vodka.png"
+./images/wine/jack-daniels.png"
+./images/wine/johnny-walker.png"
+./images/wine/moeat-and-chandon.png"
+./images/wine/moet-and-chandon.png"
+./images/wine/moet-and-chandon-white.png"
+./images/wine/perrier-jouet.png"
+
+
+
+
+
+.line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #cfdac8;
+        height: 100vh;
+        width: 100%;
+        flex: column;
+    }

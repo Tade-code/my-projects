@@ -1,0 +1,1261 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background 250ms ease-in;
+    background: #cfdac8;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Nav Bar */
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+
+.logo {
+    color: black;
+    font-family: 'Hachi Maru Pop', cursive;
+    float: left;
+    font-size: 16px;
+    margin-left: 13rem;
+    padding-top: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 6rem;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    bottom: -8px;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color:green;
+    position: absolute;
+    bottom: 24px;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+/* *************************************** */
+
+/* Style One */
+.wrapper.style1 {
+    width: 100vw;
+    height: 100vh;
+    background-image:  linear-gradient(to bottom, rgba(0,0,0, 0.52), rgba(0,0,0, 0.73)), url(images/pexels-pixabay-262047.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper.style1 .inner {
+    height: 100vh;
+    text-align: center;
+    padding-top: 15em;
+}
+
+.wrapper.style1 .inner h1 {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.wrapper.style1 .inner em {
+    font-family: 'Hachi Maru Pop', cursive;
+    text-transform: uppercase;
+    font-style: normal
+}
+
+.wrapper.style1 .inner p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 35em;
+}
+
+.actions {
+    padding-right: 33em;
+    padding-top: 12px;
+}
+/* ******************************************************* */
+
+/* Buttons */
+.button1 {
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 9rem;
+    appearance: none;
+    transition: border-color 0.2s ease;
+    background-color: transparent;
+    border: solid 1px !important;
+    border-color: rgba(253, 252, 252, 0.5) !important;
+    border-radius: 3em;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+    height: calc(4.75em + 2px);
+    letter-spacing: 0.25em;
+    line-height: 4.75em;
+    outline: 0;
+    padding: 0 3.75em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+.button {
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: -90px;
+    appearance: none;
+    transition: border-color 0.2s ease;
+    background-color: transparent;
+    border: solid 1px !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 3em;
+    color: black !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+    height: calc(4.75em + 2px);
+    letter-spacing: 0.25em;
+    line-height: 4.75em;
+    outline: 0;
+    padding: 0 3.75em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.button1:after,
+.button:after {
+    transform: scale(0.25);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    background:chartreuse;
+    border-radius: 3em;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.button1:hover,
+.button:hover {
+    border-color:chartreuse;
+    text-decoration: none;
+}
+
+.button1:hover::after,
+.button:hover::after {
+    opacity: 0.4;
+    transform: scale(1);
+}
+/* **************************************************** */
+
+/* Who We Are */
+.wrapper.style2  {
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image-left img {
+    width: 90%;
+    height: 80%;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.image-left {
+    position: absolute;
+    width: 50vw;
+    float: left;
+    margin-left: 5rem;
+}
+
+.text-right {
+    width: 50vw;
+    float: right;
+    margin-top: 8rem;
+    color: rgb(100, 85, 85);
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    text-align-last: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text h3 {
+    font-size: 37px;
+    margin-right: 30px;
+    font-weight: bolder;
+    color:  hsl(209, 28%, 39%);
+}
+
+.text p {
+    margin-top: 3rem;
+    font-size: 12px;
+    line-height: 2.2;
+    font-weight: 600;
+}
+
+.text ul {
+    margin-top: 2rem;
+    font-size: 12px;
+    margin-left: 20px;
+    line-height: 2.5;
+    font-weight: 600;
+}
+
+
+hr {
+    width: 80%;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:chartreuse;
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+
+.btn-menu {
+    position: relative;
+    margin-left: 35rem;
+}
+
+.btn {
+    position: absolute;
+    display: block;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    background: chartreuse;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.reservation {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 14rem;
+    position: relative;
+}
+
+.chef-left img {
+    width: 70%;
+    height: 90%;
+}
+
+.chef-left {
+    width: 50vw;
+    float: left;
+    padding-left: 5rem;
+}
+
+.contact {
+    width: 50vw;
+    float: right;
+}
+
+
+.contact h6 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 90px;
+    
+}
+
+.contact h4 {
+    text-align: center;
+    font-size: 40px;
+    margin-right: 90px;
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(209, 28%, 39%);
+}
+
+.contact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-left: 50px;
+}
+
+.contact h2 {
+    color: green;
+    margin-right: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact h3 {
+    margin-left: 220px;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.box input[type = "text"],
+.box input[type = "datetime-local"],
+.box input[type = "number"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 14px 10px;
+    width: 280px;
+    height: 50px;
+    outline: none;
+    color: grey;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+input, label {
+    margin-top: 40px;
+}
+
+label {
+    display: block;
+    width: 70%;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input:placeholder-shown {
+    font-size: 13px
+}
+
+.col {
+    width: 300px;
+    padding-right: 200px;
+    display: inline-block;
+
+}
+
+.box input[type = "text"]:hover, 
+.box input[type = "datetime-local"]:hover,
+.box input[type = "number"]:hover {
+    border: 1px solid chartreuse;
+}
+
+.box input[type = "text"]:focus, 
+.box input[type = "datetime-local"]:focus,
+.box input[type = "number"]:focus {
+    width: 300px;
+}
+
+.box input[type = "submit"] {
+    margin-left: 13.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    background: chartreuse;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    border: 0px;
+    outline: none;
+}
+
+.box input[type = "submit"]:hover,
+.box input[type = "submit"]:focus,
+.box input[type = "submit"]:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 43vh;
+    float: inline-end;
+    bottom: 0;
+}
+
+
+.footer-all {
+    background-color: rgb(34, 32, 32);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-bottom: 80px;
+}
+
+.about-us, .user-links,
+.social {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* About Us */
+.about-us {
+    width: 25%;
+    display: inline-block;
+    margin-left: 65px;
+    color: #fff;
+    float: left;
+}
+
+.about-us li {
+    list-style: none;
+}
+
+.about-us li p {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 12px;
+    
+}
+
+.fa-map-marker, .fa-envelope,
+.fa-phone {
+    margin-left: 10px;
+}
+/* ************************************************ */
+
+/* User Links */
+.user-links {
+    width: 25vw;
+    display: block;
+    float: right;
+}
+
+.user-links ul {
+    list-style: none;
+}
+
+.user-links li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.user-links i {
+    color: grey;
+    margin-right: 10px;
+}
+
+.user-links a:hover {
+    color: chartreuse;
+}
+/* ***************************************************** */
+
+/* Socail Links */
+.social {
+    width: 25vw;
+    display: block;
+    float: right;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.social i {
+    color: grey;
+    margin-right: 10px;
+}
+
+/* ***************************************** */
+/* Page Animation */
+.slide-in {
+    animation: slide-in 0.5s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+/* Menu */
+
+/* Section */
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+/* ******************************** */
+
+/* Menu Item image and text*/
+img:not(.logo) {
+    width: 70%;
+}
+
+img {
+    display: block;
+}
+
+.menu-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+    margin-top: 1rem;
+}
+
+.item-info text {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted hsl(210, 22%, 49%);
+    font-family: "Roboto", sans-serif;
+}
+
+.item-info h4 {
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.875rem;
+}
+
+.price {
+    color: #c59d5f;
+}
+
+.item-text {
+    margin-bottom: 0;
+    padding-top: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: hsl(211, 27%, 70%);
+}
+
+
+
+
+/* Responsive view */
+
+
+
+
+.wrapper.style3  {
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.our-menu {
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    color:  hsl(209, 28%, 39%);
+    margin-bottom: 1rem;
+}
+
+.line {
+    position: absolute;
+    width: 2.8%;
+    height: 8px;
+    background-color:chartreuse;
+    border: 0 none;
+    align-content: center;
+    justify-content: center;
+    margin: 0 none;
+    margin-left: 33.2rem;
+    margin-top: 1.5rem;
+}
+
+.hr {
+    width: 100%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+
+/* Reviews */
+.section {
+    padding: 5rem 0;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+
+.title {
+    position: absolute;
+    text-align: center;
+    margin-bottom: 30rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: chartreuse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review {
+    width: 60vw;
+    height: 35vh;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-left: 12rem;
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#author {
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    color:  hsl(209, 28%, 39%);
+    
+}
+
+#info {
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color:  hsl(209, 28%, 39%);
+    
+}
+
+.btn-container {
+    position: absolute;
+    margin-left: 20rem;
+}
+
+.prev-btn,
+.next-btn {
+    color: hsl(205, 90%, 76%);
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2rem;
+}
+.prev-btn:hover,
+.next-btn:hover {
+    color: hsl(205, 78%, 60%);
+    outline: none;
+}
+
+.signature {
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 20.5rem;
+    font-family: 'Rouge Script', cursive;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: chartreuse;
+}
+
+/* Responsive */
+@media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .header {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .lines {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 6%;
+        top: 24%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.5);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .dropdown {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        background: #cfdac8;
+        height: 35vh;
+        width: 100vw;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .dropdown.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .landing {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        top: 20px;
+    }
+
+
+    .nav-links a {
+        color: black;
+        font-size: 23px;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .logo {
+        position: absolute;
+        float: left;
+        right: 9rem;
+    }
+
+    /* Wrapper STyle1 */
+    .wrapper.style1 {
+        width: 100vw;
+        height: 90vh;
+        background-image:  linear-gradient(to bottom, rgba(0,0,0, 0.52), rgba(0,0,0, 0.73)), url(images/pexels-pixabay-262047.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .wrapper.style1 .inner p {
+        padding: 6px;
+        position: absolute;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding-left: 68px;
+    }
+
+    .actions {
+        padding-left: 4.3rem;
+        padding-top: 2rem;
+    }
+
+    .wrapper.style2  {
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .image-left img {
+        width: 90%;
+        height: 80%;
+        
+        margin-bottom: 10rem;
+    }
+    
+    .image-left {
+        position: absolute;
+        margin-right: 13rem;
+    }
+    
+    .text-right {
+        margin-right: 10rem;
+        margin-top: 16rem;
+        color: rgb(100, 85, 85);
+    }
+    
+    .text {
+        position: absolute;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .text h3 {
+        font-size: 37px;
+        font-weight: bolder;
+        color:  hsl(209, 28%, 39%);
+        text-align: right;
+    }
+    
+    .text p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.6;
+        font-weight: 600;
+        margin-right: 1rem;
+    }
+    
+    .text ul {
+        text-align: left;
+        margin-top: 2rem;
+        font-size: 12px;
+        padding-right: 1rem;
+        line-height: 2.5;
+        font-weight: 600;
+        
+    }
+
+    .wrapper.style3  {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    
+    
+    
+    h2 {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.4rem;
+        color:  hsl(209, 28%, 39%);
+        margin-bottom: 1rem;
+    }
+    
+    .line {
+        position: absolute;
+        width: 8%;
+        height: 8px;
+        background-color:chartreuse;
+        border: 0 none;
+        margin: 0 none;
+        right: 16.5rem;
+    }
+    
+    .hr {
+        width: 100%;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0 none;
+        margin-top: 100px;
+        margin-bottom:100px;
+    }
+
+    /* Menu Item image and text*/
+img:not(.logo) {
+    width: 50%;
+}
+
+img {
+    display: block;
+}
+
+
+
+.item-info text {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted hsl(210, 22%, 49%);
+    font-family: "Roboto", sans-serif;
+}
+
+.item-info h4 {
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.875rem;
+}
+
+.price {
+    color: #c59d5f;
+}
+
+.item-text {
+    margin-bottom: 0;
+    padding-top: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: hsl(211, 27%, 70%);
+}
+
+    .reservation {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    
+   
+    .contact {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        margin-top: 50rem;
+    }
+    
+    
+    .contact h6 {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-size: 20px;
+        margin-right: 90px;
+        
+    }
+    
+    .contact h4 {
+        text-align: center;
+        font-size: 40px;
+        margin-right: 90px;
+        font-family: 'Poppins', sans-serif;
+        color:  hsl(209, 28%, 39%);
+    }
+    
+    .contact p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        margin-top: 2rem;
+        margin-left: 50px;
+    }
+    
+    .contact h2 {
+        color: green;
+        margin-right: 80px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .contact h3 {
+        margin-left: 220px;
+        margin-top: 2rem;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .box input[type = "text"],
+    .box input[type = "datetime-local"],
+    .box input[type = "number"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid grey;
+        padding: 14px 10px;
+        width: 280px;
+        height: 50px;
+        outline: none;
+        color: grey;
+        border-radius: 5px;
+        transition: 0.25s;
+    }
+    
+    input, label {
+        margin-top: 40px;
+    }
+    
+    label {
+        display: block;
+        width: 70%;
+        float: left;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    input:placeholder-shown {
+        font-size: 13px
+    }
+    
+    
+    
+    .box input[type = "text"]:hover, 
+    .box input[type = "datetime-local"]:hover,
+    .box input[type = "number"]:hover {
+        border: 1px solid chartreuse;
+    }
+    
+    .box input[type = "text"]:focus, 
+    .box input[type = "datetime-local"]:focus,
+    .box input[type = "number"]:focus {
+        width: 300px;
+    }
+    
+    .box input[type = "submit"] {
+        margin-left: 13.5rem;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        background: chartreuse;
+        width: 160px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+        border: 0px;
+        outline: none;
+    }
+    
+    .box input[type = "submit"]:hover,
+    .box input[type = "submit"]:focus,
+    .box input[type = "submit"]:active {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #fff;
+    } */
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
